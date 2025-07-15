@@ -19,13 +19,15 @@ jobs:
           node-version: 20
 
       - name: Install dependencies
+        working-directory: RotondoConsulting
         run: npm install
 
-      - name: Build Angular app
+      - name: Build Angular app      
+        working-directory: RotondoConsulting
         run: npm run build -- --base-href=/
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: master  # The branch to deploy to
-          folder: docs  # Replace with your dist folder
+          folder: RotondoConsulting/docs  # Replace with your dist folder
