@@ -27,6 +27,9 @@ jobs:
         working-directory: RotondoConsulting
         run: npm run build -- --base-href=/
 
+      - name: Add .nojekyll file
+        run: echo "" > docs/.nojekyll
+  
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
