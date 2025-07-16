@@ -28,13 +28,13 @@ jobs:
         run: npm run build -- --base-href=/
 
       - name: Debug build output
-        run: ls -la docs
+        run: ls -la RotondoConsulting/docs
 
       - name: Add .nojekyll file
-        run: echo "" > docs/.nojekyll
+        run: echo "" > RotondoConsulting/docs/.nojekyll
   
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages  # The branch to deploy to
-          folder: docs  # Replace with your dist folder
+          folder: RotondoConsulting/docs  # Replace with your dist folder
