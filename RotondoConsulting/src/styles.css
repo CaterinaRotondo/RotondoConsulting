@@ -1,19 +1,42 @@
-/* You can add global styles to this file, and also import other style files */
+﻿/* You can add global styles to this file, and also import other style files */
 *, *::before, *::after {
     box-sizing: border-box;
 }
 
 html, body {
-    height: 100%; /* 1?? Needed to make Flexbox work */
+    height: 100%; /* 1️⃣ Needed to make Flexbox work */
     margin: 0;
     font-family: 'M PLUS 1p', sans-serif;
 }
 
-nav a {
+nav a, a {
     text-decoration: none;
     color: #000; /* your base color */
 }
 
-nav a:visited {
-    color: inherit;
+nav a:visited, a:visited {
+    color: inherit; 
 }
+
+a:hover {
+    color: dimgrey;
+}
+
+.content-wrapper {
+    max-width: 2000px;
+    width: 80vw;
+    margin: 0 auto;
+    margin-top: 125px;
+    padding: 0px 60px;
+}
+
+.header .content-wrapper, .footer .content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    padding: 0px 0px;
+    margin-top: 0px;
+}
+
+
