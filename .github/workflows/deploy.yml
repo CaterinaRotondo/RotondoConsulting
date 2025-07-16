@@ -27,6 +27,9 @@ jobs:
         working-directory: RotondoConsulting
         run: npm run build -- --base-href=/
 
+      - name: Debug build output
+        run: ls -la docs
+
       - name: Add .nojekyll file
         run: echo "" > docs/.nojekyll
   
