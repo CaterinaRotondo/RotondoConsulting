@@ -1,6 +1,7 @@
 footer {
+    height: 95px;
     padding: 20px;
-    text-align: center;
+    text-align: right;
     border-top: 4px solid;
     border-image: linear-gradient(to right, #11009E, #C4B0FF) 100;
 }

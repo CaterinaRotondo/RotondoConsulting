@@ -31,3 +31,9 @@ nav a {
 nav a:hover {
     text-decoration: underline;
 }
+
+.icons {
+    width: 32px;
+    display: inline-block; /* makes margin work nicely */
+    margin-left: 1.5rem;
+}

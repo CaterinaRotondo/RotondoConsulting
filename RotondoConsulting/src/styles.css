@@ -1,12 +1,26 @@
 ﻿/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'SofiaPro';
+    src: url('/assets/fonts/SofiaPro-Regular.woff2') format('woff2'), url('/assets/fonts/SofiaPro-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SofiaPro';
+    src: url('/assets/fonts/SofiaPro-Bold.woff2') format('woff2'), url('/assets/fonts/SofiaPro-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
 *, *::before, *::after {
     box-sizing: border-box;
 }
 
 html, body {
-    height: 100%; /* 1️⃣ Needed to make Flexbox work */
+    height: 100%; /* Needed to make Flexbox work */
     margin: 0;
-    font-family: 'M PLUS 1p', sans-serif;
+    font-family: 'SofiaPro', sans-serif;
 }
 
 nav a, a {
@@ -24,10 +38,9 @@ a:hover {
 
 .content-wrapper {
     max-width: 2000px;
-    width: 80vw;
     margin: 0 auto;
     margin-top: 125px;
-    padding: 0px 60px;
+    padding: 0px 200px;
 }
 
 .header .content-wrapper, .footer .content-wrapper {
@@ -35,8 +48,11 @@ a:hover {
     align-items: center;
     justify-content: space-between;
     height: 100%;
-    padding: 0px 0px;
+    padding: 0px 120px;
     margin-top: 0px;
 }
 
+h1 {
+    color: #11009E;
+}
 
