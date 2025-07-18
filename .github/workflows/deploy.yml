@@ -20,18 +20,10 @@ jobs:
           node-version: 20
 
       - name: Install dependencies
-       # working-directory: RotondoConsulting
         run: npm install
 
       - name: Build Angular app      
-       # working-directory: RotondoConsulting
         run: npm run build -- --base-href=/
-
-      #- name: Debug build output
-      #  run: ls -la RotondoConsulting/docs
-
-     # - name: Add .nojekyll file
-      #  run: echo "" > RotondoConsulting/docs/.nojekyll
   
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
