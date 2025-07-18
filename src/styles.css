@@ -40,7 +40,7 @@ a:hover {
     max-width: 2000px;
     margin: 0 auto;
     margin-top: 125px;
-    padding: 0px 200px;
+    padding: 0px 15rem;
 }
 
 .header .content-wrapper, .footer .content-wrapper {
@@ -48,11 +48,28 @@ a:hover {
     align-items: center;
     justify-content: space-between;
     height: 100%;
-    padding: 0px 120px;
+    width: 100%;
+    padding: 0px 10rem;
     margin-top: 0px;
 }
 
 h1 {
     color: #11009E;
+}
+
+@media (max-width: 768px) { 
+    .header .content-wrapper, .footer .content-wrapper {
+        padding: 0px 1rem;
+    }
+
+    .content-wrapper {
+        max-width: 100%;
+        padding: 0px 2rem;
+        margin-top: 100px;
+    }
+
+    html, body {
+        font-size: 14px; /* Adjust base font size for smaller screens */
+    }
 }
 

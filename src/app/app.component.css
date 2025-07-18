@@ -40,3 +40,13 @@
     width: 32px; /* size your PNG */
     display: block;
 }
+
+@media (max-width: 768px) {
+    .back-to-top {
+      right: 10px;
+    }
+
+    .back-to-top img {
+        width: 24px; /* smaller size for mobile */
+    }
+}
