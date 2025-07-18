@@ -51,4 +51,8 @@
     .back-to-top img {
         width: 24px; /* smaller size for mobile */
     }
+
+    .app-wrapper {
+        min-height: calc(var(--vh, 1vh) * 100);
+    }
 }
