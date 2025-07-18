@@ -7,6 +7,8 @@
 .content {
     flex: 1; /* Take up remaining space */
     padding: 20px; /* optional */
+    display: flex;
+    flex-direction: column;
 }
 
 .back-to-top {
