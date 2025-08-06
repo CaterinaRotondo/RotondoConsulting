@@ -14,27 +14,28 @@
     background-color: rgba(17, 0, 158, 0.7);;
 }
 
-/*.carousel-wrapper {
-    display: inline-block;
-}
-
-.splide {
-    width: max-content;
-    margin: 0 auto;
-}*/
-
 .splide__slide {
     text-align: center;
+    width: max-content;
 }
 
 .splide__slide img {
-   /* height: 160px;          ✅ fixed height for all images */
-   height: 160px;
+    height: 160px;          /* ✅ fixed height for all images */
     border-radius: 4px;
 }
 
 .splide__slide a {
     font-size: 14px;
+}
+
+::ng-deep .splide__arrow {
+    background-color: rgba(17, 0, 158, 0.5);
+    opacity: 1;
+}
+
+::ng-deep .splide__arrow:hover {
+    background-color: rgba(196, 176, 255, 1);
+    opacity: 1;
 }
 
 @media (max-width: 1600px) {
