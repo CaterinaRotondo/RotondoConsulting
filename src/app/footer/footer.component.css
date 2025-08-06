@@ -1,14 +1,7 @@
 footer {
-    height: 95px;
+    height: clamp(80px, 5.3vw, 95px);
     text-align: right;
     border-top: 4px solid;
     border-image: linear-gradient(to right, #11009E, #C4B0FF) 100;
     width: 100%;
-}
-
-@media (max-width: 768px) { 
-    footer {
-        height: 80px; /* Adjust height for smaller screens */
-        padding: 10px;
-    }
 }

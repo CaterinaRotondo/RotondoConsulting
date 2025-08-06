@@ -6,7 +6,6 @@
 }
 
 h1 {
-    color: #11009E;
     font-size: clamp(2rem, 2.1vw, 2.5rem);
     width: 100%;
     text-align: center;
@@ -14,15 +13,14 @@ h1 {
 
 h2 {
     font-size: clamp(1.2rem, 1.5vw, 1.69rem);
-    color: #11009E;
     margin-bottom: 0.4rem;
-    margin-top: 2rem;
+    margin-top: 0;
 }
 
 .single {
     width: 100%;
     padding: 20px;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .single > h1 {

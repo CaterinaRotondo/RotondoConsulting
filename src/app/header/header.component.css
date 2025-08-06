@@ -1,7 +1,9 @@
 .header {
     border-bottom: 4px solid;
     border-image: linear-gradient(to right, #11009E, #C4B0FF) 100;
-    height: 125px;
+    height: 7.2vw;
+    max-height: 125px;
+    min-height: 100px;
     position: fixed;
     top: 0;
     left:0;
@@ -23,29 +25,18 @@
     display: block;
 }
 
-nav a {
-    margin-right: 15px;
-    text-decoration: none;
-    color: #333;
-}
-
-nav a:hover {
-    text-decoration: underline;
+.icon-wrapper {
+    display: flex;
 }
 
 .icons {
-    width: 32px;
+    width: clamp(24px, 1.8vw, 32px);
     display: inline-block; /* makes margin work nicely */
     margin-left: 1.5rem;
 }
 
-@media (max-width: 768px) { 
-    .header {
-        height: 100px; /* Adjust height for smaller screens */
-    }
-
-    .icons {
-        width: 24px; /* Adjust icon size for smaller screens */
-        margin-left: 1rem;
+@media (max-width: 430px) { 
+    .icon-wrapper {
+        flex-direction: column;
     }
 }

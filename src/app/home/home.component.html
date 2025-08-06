@@ -1,12 +1,12 @@
 <div class="content-wrapper">
     <!-- This is the hero section -->
-    <div class="single" style="min-height: 650px;text-align: center;">
-        <h1>Webl&ouml;sungen, die &uuml;berzeugen</h1>
+    <div class="single" style="text-align: center;">
+        <h1><span class="no-break">Webl&ouml;sungen,</span> die &uuml;berzeugen</h1>
         <p>
             Ob individuelle Homepage oder anpassbare Vorlage &#45; wir entwickeln moderne, responsive und suchmaschinenoptimierte Websites 
             auf Basis von <b>Angular</b> und <b>C&#35;</b> &#45; zuverl&auml;ssig und zukunftssicher
         </p>
-        <img src="assets/computer.png" alt="Computer und Laptop" class="icons" style="height: 30%; min-height: 170px; max-height: 300px;">
+        <img src="assets/computer.png" alt="Computer und Laptop" class="icons" style="width: 30%; min-width: 250px; max-width: 400px;">
         <div class="button-wrapper">
             <button (click)="scrollToSection('angebot')" class="template-button">Mehr erfahren</button>
         </div>
@@ -15,10 +15,10 @@
     <!-- This is the section with the two boxes -->
     <div class="angebot" id="angebot">
         <div class="left-block">
-            <h1>Ma&szlig;geschneiderte Homepages</h1>
+            <h1>Ma&szlig;&shy;geschneiderte Homepages</h1>
             Sie haben eine Idee, ein Ziel oder bereits ein fertiges Design?
             Wir unterst&uuml;tzen Sie bei der technischen Umsetzung &#45; zuverl&auml;ssig, modern und auf Ihre Anforderungen zugeschnitten.
-            <div style="flex-direction: row; display: flex; margin-top: 20px; margin-bottom: 20px;">
+            <div style="flex-direction: row; display: flex; margin-top: 30px; margin-bottom: 30px;align-items: center;">
                 <div style="flex: 2.5;">
                     <h2>&#10004; Moderne Single Page Applications</h2>
                     Leichte und performante Webseiten auf Basis von Angular &#45; ideal f&uuml;r Landingpages, Produktpr&auml;sentationen 
@@ -54,16 +54,21 @@
     </div>
 
     <!-- This is the section at the bottom -->
-    <div class="single" style="height: auto;margin-top: 30px">
-        Mit langj&auml;hriger Erfahrung in der Entwicklung moderner Webanwendungen mit Angular und C&#35; bieten wir professionelle L&ouml;sungen 
-        f&uuml;r individuelle Anforderungen &#45; von einfachen One&#45;Pagers bis hin zu komplexen Systemen mit Backend-Anbindung. <br>
-        Sie haben bereits ein konkretes Projekt im Blick oder m&ouml;chten erste Ideen besprechen? Gerne beraten wir Sie pers&ouml;nlich und 
-        unverbindlich.
+    <div class="single" style="min-height: auto;margin-top: 30px">
+        <div style="text-align: center;">
+            Mit langj&auml;hriger Erfahrung in der Entwicklung moderner Webanwendungen mit Angular und C&#35; bieten wir professionelle L&ouml;sungen 
+            f&uuml;r individuelle Anforderungen &#45; von einfachen One&#45;Pagers bis hin zu komplexen Systemen mit Backend-Anbindung. <br>
+            Sie haben bereits ein konkretes Projekt im Blick oder m&ouml;chten erste Ideen besprechen? Gerne beraten wir Sie pers&ouml;nlich und 
+            unverbindlich.
+        </div>
         <div class="button-wrapper">
             <a href="mailto:mail@rotondo-consulting.de?subject=Anfrage&body=Sehr geehrte Damen und Herren," class="template-button">Jetzt Kontakt aufnehmen</a>
         </div>  
         <p></p>
-        Hier erhalten Sie einen Einblick in unsere Arbeit:<br><br>
-        <app-carousel></app-carousel>   
+        <div>
+            Hier erhalten Sie einen Einblick in unsere Arbeit:<br><br>
+            <app-carousel></app-carousel>  
+        </div>
     </div>
+    
 </div>
