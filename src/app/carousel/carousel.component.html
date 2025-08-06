@@ -1,0 +1,13 @@
+<div class="carousel-wrapper">
+    <div id="carousel" class="splide">
+        <div class="splide__track">
+            <ul class="splide__list">
+            <li class="splide__slide" *ngFor="let project of projects">
+                <img [src]="project.image" [alt]="project.title" />
+                <h3 style="margin-top: 1rem;">{{ project.title }}</h3>
+                <a [href]="project.link" target="_blank" class="carousel-button">Website ansehen</a>
+            </li>
+            </ul>
+        </div>
+    </div>
+</div>

@@ -1,5 +1,69 @@
 <div class="content-wrapper">
-    <div class="home-message">
-        Wir bauen um!
+    <!-- This is the hero section -->
+    <div class="single" style="min-height: 650px;text-align: center;">
+        <h1>Webl&ouml;sungen, die &uuml;berzeugen</h1>
+        <p>
+            Ob individuelle Homepage oder anpassbare Vorlage &#45; wir entwickeln moderne, responsive und suchmaschinenoptimierte Websites 
+            auf Basis von <b>Angular</b> und <b>C&#35;</b> &#45; zuverl&auml;ssig und zukunftssicher
+        </p>
+        <img src="assets/computer.png" alt="Computer und Laptop" class="icons" style="height: 30%; min-height: 170px; max-height: 300px;">
+        <div class="button-wrapper">
+            <button (click)="scrollToSection('angebot')" class="template-button">Mehr erfahren</button>
+        </div>
+    </div>
+
+    <!-- This is the section with the two boxes -->
+    <div class="angebot" id="angebot">
+        <div class="left-block">
+            <h1>Ma&szlig;geschneiderte Homepages</h1>
+            Sie haben eine Idee, ein Ziel oder bereits ein fertiges Design?
+            Wir unterst&uuml;tzen Sie bei der technischen Umsetzung &#45; zuverl&auml;ssig, modern und auf Ihre Anforderungen zugeschnitten.
+            <div style="flex-direction: row; display: flex; margin-top: 20px; margin-bottom: 20px;">
+                <div style="flex: 2.5;">
+                    <h2>&#10004; Moderne Single Page Applications</h2>
+                    Leichte und performante Webseiten auf Basis von Angular &#45; ideal f&uuml;r Landingpages, Produktpr&auml;sentationen 
+                    oder Firmenwebseiten.
+                </div>
+                <div style="flex: 1; text-align: center;">
+                    <img src="assets/computer_single2.png" alt="Computer" class="icons" style="max-width: 80%;">
+                </div>
+            </div>
+            <div style="margin-bottom: 2rem;">
+                <h2>&#10004; Komplexe L&ouml;sungen mit C&#35; Backend</h2>
+                F&uuml;r anspruchsvollere Anwendungen entwickeln wir individuelle Webl&ouml;sungen mit ASP.NET Core &#45; z.B. mit 
+                Nutzerverwaltung, Datenbanken, Schnittstellen und vielem mehr.
+            </div>
+            Ob Skizze, Prototyp oder Designvorgabe - wir &uuml;bernehmen die Umsetzung mit Fokus auf Stabilit&auml;t, Wartbarkeit und modernem Code.            
+        </div>
+        <div class="right-block">
+            <h1>Vorgefertige Homepage-Vorlagen</h1>
+            Sie haben kein eigenes Design, m&ouml;chten aber trotzdem stilvoll auftreten?
+            F&uuml;r viele Anwendungsf&auml;lle ist eine solide, anpassbare Vorlage die schnellere und kosteneffizientere L&ouml;sung.
+            <p></p>
+            <b>&#10004; Auswahl aus modernen, vorgefertigten Webdesigns</b><br>
+            <b>&#10004; Farben, Texte und Bilder individuell anpassbar</b><br>
+            <b>&#10004; Schnelle Umsetzung &#45; ideal f&uuml;r kleine Unternehmen, Aktionen oder Landingpages</b>
+            <p></p>
+            W&auml;hlen Sie ein Design aus, und wir passen es individuell an Ihre Inhalte an.<br>
+            Einfach. Schnell. Professionell.
+            <div class="button-wrapper">
+                <a href="/templates" class="template-button">Vorlagen ansehen</a>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- This is the section at the bottom -->
+    <div class="single" style="height: auto;margin-top: 30px">
+        Mit langj&auml;hriger Erfahrung in der Entwicklung moderner Webanwendungen mit Angular und C&#35; bieten wir professionelle L&ouml;sungen 
+        f&uuml;r individuelle Anforderungen &#45; von einfachen One&#45;Pagers bis hin zu komplexen Systemen mit Backend-Anbindung. <br>
+        Sie haben bereits ein konkretes Projekt im Blick oder m&ouml;chten erste Ideen besprechen? Gerne beraten wir Sie pers&ouml;nlich und 
+        unverbindlich.
+        <div class="button-wrapper">
+            <a href="mailto:mail@rotondo-consulting.de?subject=Anfrage&body=Sehr geehrte Damen und Herren," class="template-button">Jetzt Kontakt aufnehmen</a>
+        </div>  
+        <p></p>
+        Hier erhalten Sie einen Einblick in unsere Arbeit:<br><br>
+        <app-carousel></app-carousel>   
     </div>
 </div>

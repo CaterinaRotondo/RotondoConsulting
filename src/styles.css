@@ -21,12 +21,14 @@ html, body {
     height: 100%; /* Needed to make Flexbox work */
     margin: 0;
     font-family: 'SofiaPro', sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
     display: flex;
     flex-direction: column;
     min-height: 100vh; /* Full viewport height */
+    font-size: clamp(14px, 0.95vw, 18px);
 }
 
 nav a, a {
@@ -46,7 +48,8 @@ a:hover {
     max-width: 2000px;
     margin: 0 auto;
     margin-top: 125px;
-    padding: 0px 15rem;
+   /* padding: 0px 15rem; */
+   padding: 0 10vw;
 }
 
 .header .content-wrapper, .footer .content-wrapper {
@@ -55,7 +58,8 @@ a:hover {
     justify-content: space-between;
     height: 100%;
     width: 100%;
-    padding: 0px 10rem;
+    /* padding: 0px 10rem;*/
+    padding: 0 8vw;
     margin-top: 0px;
 }
 
@@ -63,8 +67,22 @@ h1 {
     color: #11009E;
 }
 
+/* Settings for Mobile */
 @media (max-width: 768px) { 
-    .header .content-wrapper, .footer .content-wrapper {
+    /*.header .content-wrapper, .footer .content-wrapper {
+        padding: 0px 1rem;
+    }*/
+
+    /*.content-wrapper {
+        max-width: 100%;
+        padding: 0px 2rem;
+        margin-top: 100px;
+    }*/
+}
+
+/* Settings for Tablet */
+@media (min-width: 769px) and (max-width: 1024px) { 
+    /*.header .content-wrapper, .footer .content-wrapper {
         padding: 0px 1rem;
     }
 
@@ -72,10 +90,5 @@ h1 {
         max-width: 100%;
         padding: 0px 2rem;
         margin-top: 100px;
-    }
-
-    html, body {
-        font-size: 14px; /* Adjust base font size for smaller screens */
-    }
+    }*/
 }
-
