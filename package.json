@@ -20,7 +20,6 @@
     "@angular/router": "^18.2.13",
     "@splidejs/splide": "^4.1.4",
     "ng2-pdf-viewer": "^10.4.0",
-    "ngx-owl-carousel-o": "^17.0.1",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.2"
