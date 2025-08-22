@@ -32,6 +32,23 @@ templates: TemplateItem[] = [
         'assets/templates/template3/2.png',
         'assets/templates/template3/3.png'
       ]
+    },
+    {
+      id: 2,
+      name: 'Business Medium',
+      description: `Unser Portfolio-Template bietet Ihnen die Möglichkeit Ihre Projekte und Arbeiten auf elegante und übersichtliche Weiße darzustellen. 
+                  Persönliche Informationen und Social Media Links können selbstständig verwaltet werden. 
+                  Das initiale Einpflegen Ihrer Texte und Bilder ist bereits im Preis enthalten. `,
+      screenshot: 'assets/templates/template1/1.png',
+      price: 'ab 449 €',
+      gallery: [
+        'assets/templates/template1/1.png',
+        'assets/templates/template1/2.png',
+        'assets/templates/template1/3.png',
+        'assets/templates/template1/4.png',
+        'assets/templates/template1/5.png',
+        'assets/templates/template1/6.png'
+      ]
     }
   ];
 
