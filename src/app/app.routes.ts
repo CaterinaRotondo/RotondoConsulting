@@ -8,5 +8,6 @@ export const routes: Routes = [
     { path: '', component: HomeComponent },
     { path: 'impressum', component: ImpressumComponent },
     { path: 'datenschutz', component: DatenschutzComponent },
-    { path: 'templates', component: TemplatesComponent }
+    { path: 'templates', component: TemplatesComponent },
+    { path: '**', component: HomeComponent }
 ];
