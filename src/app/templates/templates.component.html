@@ -1,3 +1,47 @@
 <div class="content-wrapper">
-<p>templates works!</p>
+    <h2>Unsere Vorlagen – flexibel und anpassbar</h2>
+    <p>
+        Alle unsere Vorlagen werden inklusive eines Basis-Impressums und einer Basis-Datenschutzerklärung geliefert.<br>
+        Je nach Vorlage haben Sie die Möglichkeit, Inhalte ganz einfach über eine Konfigurationsdatei anzupassen. Bei anderen Vorlagen übernehmen wir die Anpassungen gerne für Sie.
+        Darüber hinaus können alle Vorlagen individuell erweitert oder verändert werden - die Abrechnung erfolgt nach tatsächlichem Aufwand.<br>
+        So erhalten Sie eine Lösung, die perfekt zu Ihrem Projekt passt - rechtssicher, flexibel und zukunftssicher. 
+    </p>
+    
+    <div class="grid">
+        <div class="card" *ngFor="let template of templates" (click)="openDetails(template)">
+            <img [src]="template.screenshot" [alt]="template.name" class="screenshot" />
+            <div class="info">
+                <h3>{{ template.name }}</h3>
+                <p class="price">{{ template.price }}</p>
+                <button class="detail-btn" (click)="openDetails(template)">Details</button> 
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal" *ngIf="selectedTemplate" (click)="closeDetails()">
+        <div class="modal-content" (click)="$event.stopPropagation()" #modalContent>
+            <button class="close-btn" (click)="closeDetails()">X</button>
+            <div class="modal-header">
+                <h2>{{ selectedTemplate.name }}</h2>
+            </div>
+            
+            <div class="modal-carousel" #carouselContainer>
+                <!-- Carousel container -->
+                <div id="splide-{{selectedTemplate.id}}" class="splide" #splideRef>
+                <div class="splide__track">
+                    <ul class="splide__list">
+                    <li class="splide__slide" *ngFor="let img of selectedTemplate.gallery">
+                        <img [src]="img" alt="Template screenshot" />
+                    </li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+
+            <div class="modal-description" #descriptionRef>
+                {{ selectedTemplate.description }}
+            </div>
+        </div>
+    </div>
 </div>

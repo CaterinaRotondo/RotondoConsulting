@@ -30,9 +30,9 @@
 }
 
 .icons {
-    width: clamp(24px, 1.8vw, 32px);
     display: inline-block; /* makes margin work nicely */
     margin-left: 1.5rem;
+    font-size: clamp(30px, 2.3vw, 40px);
 }
 
 @media (max-width: 430px) { 
