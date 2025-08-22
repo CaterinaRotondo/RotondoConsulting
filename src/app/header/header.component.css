@@ -1,9 +1,7 @@
 .header {
     border-bottom: 4px solid;
     border-image: linear-gradient(to right, #11009E, #C4B0FF) 100;
-    height: 7.2vw;
-    max-height: 125px;
-    min-height: 100px;
+    height: clamp(100px, 7.2vw, 125px);
     position: fixed;
     top: 0;
     left:0;
@@ -37,6 +35,18 @@
 
 @media (max-width: 430px) { 
     .icon-wrapper {
-        flex-direction: column;
+        /*flex-direction: column;*/
+        position: fixed;          /* detach from header */
+        right: 5px;              /* stick to right side */
+        top: 50%;                 /* vertical center */
+        transform: translateY(-50%);
+        flex-direction: column;   /* stack vertically */
+        /* background: rgba(255, 255, 255, 0.8); /* optional background */
+        /* box-shadow: 0 2px 8px rgba(0,0,0,0.2); */
+        z-index: 1000;   
+    }
+
+    .icons {
+        margin-left: 0;
     }
 }
