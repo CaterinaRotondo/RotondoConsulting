@@ -37,12 +37,10 @@
     .icon-wrapper {
         /*flex-direction: column;*/
         position: fixed;          /* detach from header */
-        right: 5px;              /* stick to right side */
+        right: 8px;              /* stick to right side */
         top: 50%;                 /* vertical center */
         transform: translateY(-50%);
         flex-direction: column;   /* stack vertically */
-        /* background: rgba(255, 255, 255, 0.8); /* optional background */
-        /* box-shadow: 0 2px 8px rgba(0,0,0,0.2); */
         z-index: 1000;   
     }
 

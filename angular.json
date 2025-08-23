@@ -22,7 +22,22 @@
             "tsConfig": "tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              {
+                "glob": "robots.txt",
+                "input": "src/assets/",
+                "output": "/"
+              },
+              {
+                "glob": "sitemap.xml",
+                "input": "src/assets/",
+                "output": "/"
+              },
+              {
+                "glob": "agb.pdf",
+                "input": "src/assets",
+                "output": "/"
+              }
             ],
             "styles": [
               "node_modules/@splidejs/splide/dist/css/splide.min.css",

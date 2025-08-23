@@ -35,6 +35,21 @@ templates: TemplateItem[] = [
     },
     {
       id: 2,
+      name: 'Business Small',
+      description: `Klare Zwei-Seiten-Struktur für eine professionelle Präsentation mit persönlichem Profil und übersichtlichen Kontaktdaten.
+                  Der Inhalt lässt sich selbstständig personalisieren, sodass das Profil jederzeit aktualisiert werden kann. `,
+      screenshot: 'assets/templates/template2/1.png',
+      price: 'ab 349 €',
+      gallery: [
+        'assets/templates/template2/1.png',
+        'assets/templates/template2/2.png',
+        'assets/templates/template2/3.png',
+        'assets/templates/template2/4.png',
+        'assets/templates/template2/5.png'
+      ]
+    },
+    {
+      id: 3,
       name: 'Business Medium',
       description: `Unser Portfolio-Template bietet Ihnen die Möglichkeit Ihre Projekte und Arbeiten auf elegante und übersichtliche Weiße darzustellen. 
                   Persönliche Informationen und Social Media Links können selbstständig verwaltet werden. 
